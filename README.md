@@ -1,30 +1,50 @@
-# Parkinson's Disease Detection using Machine Learning and AI
+# Parkinson's Disease Prediction using Support Vector Machine (SVM)
+This project is a Python-based application that uses a Support Vector Machine (SVM) model to predict Parkinson's disease based on certain measurements. The application loads data from a CSV file, preprocesses it, trains the SVM model, and then makes predictions.
 
-This project aims to build a machine learning model for the early detection of Parkinson's Disease using Python in Google Colab.
+## Requirements
+To use this application, you need:
 
-## Project Overview
+Python (>=3.6)
+pandas
+scikit-learn (sklearn)
+You can install the required packages using pip:
+code:
+pip install numpy pandas scikit-learn
 
-Parkinson's Disease is a neurodegenerative disorder that affects movement control. Early detection is crucial for timely intervention and better patient outcomes. In this project, we will explore a dataset containing various features extracted from voice recordings of individuals with and without Parkinson's Disease. We will train a machine learning model to predict whether a person is likely to have Parkinson's Disease based on these voice features.
+## How to Use the Application
 
-## Data
+1.Clone the Repository:
+First, clone this repository to your local machine: code 
+git clone https://github.com/your-username/parkinsons-prediction.git
+cd parkinsons-prediction
+Prepare the Data:
 
-The dataset used in this project is sourced from [Source Name/Link]. It contains [describe the dataset, e.g., number of samples, number of features, etc.]. The data is preprocessed and cleaned to remove any anomalies or missing values.
+2.Ensure you have the 'parkinsons.csv' file in the same directory as the Python script.
+The CSV file contains the data required for training and testing the model.
+Run the Application:
 
-## Project Structure
+3.Open the Python script (e.g., 'parkinsons_prediction.py') in a Python environment, such as an Integrated Development Environment (IDE) or a text editor. Then, execute the script.
 
-The repository is organized as follows:
+4.Interpreting the Results:
 
-- `notebooks/`: Contains the Jupyter Notebook(s) for the project. The main notebook is `Parkinson_Detection.ipynb`, which contains the code for data exploration, preprocessing, model training, and evaluation.
+The application will load the data from 'parkinsons.csv', split it into training and testing sets, and standardize the features.
+The SVM model will be trained on the training data, and its accuracy on both training and test data will be displayed.
+After the model is trained, the application will predict whether a person has Parkinson's disease or not based on the provided input data.
+Note: The input data is provided as a tuple representing various measurements. The application will predict if the person has Parkinson's disease or not based on these measurements.
 
-- `data/`: Contains the dataset used in the project. If the dataset is too large, provide a link to the external source where it can be downloaded.
+5.Understanding the Prediction:
+  -If the output of the prediction is '0', it means that the person does not have Parkinson's disease.
+  -If the output of the prediction is '1', it means that the person has Parkinson's disease.
 
-- `utils/`: Contains any utility functions or helper scripts used in the project.
+## Important Information
+The predictions made by the model are based on the input data and the patterns it has learned from the training data. However, it is essential to consult a qualified healthcare professional for a proper medical diagnosis.
+This application serves as a demonstration of how machine learning models can assist in identifying potential cases of Parkinson's disease. It should not be considered a substitute for medical advice or diagnosis.
 
-- `README.md`: This file, providing an overview of the project, setup instructions, and usage guidelines.
+## Conclusion
+This application demonstrates the use of a Support Vector Machine (SVM) model to predict Parkinson's disease based on measurements from the 'parkinsons.csv' dataset. By following the instructions above, you can run the application and explore its functionality.
 
-## Setup and Usage
+If you have any questions or encounter any issues, feel free to reach out to the project developers for assistance.
 
-To run the project notebook, follow these steps:
+Thank you for your interest in the Parkinson's Disease Prediction project. Stay healthy and take care!
 
-1. Clone this GitHub repository to your local machine:
 
